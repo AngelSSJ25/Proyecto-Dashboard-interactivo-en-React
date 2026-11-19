@@ -1,0 +1,61 @@
+{
+  "etiquetas_pais_dataset": 122,
+  "etiquetas_con_geometria": 110,
+  "etiquetas_sin_geometria": 12,
+  "sin_geometria": [
+    {
+      "pais": "Hong Kong",
+      "asociaciones": 105
+    },
+    {
+      "pais": "Singapore",
+      "asociaciones": 41
+    },
+    {
+      "pais": "West Germany",
+      "asociaciones": 5
+    },
+    {
+      "pais": "Malta",
+      "asociaciones": 3
+    },
+    {
+      "pais": "Soviet Union",
+      "asociaciones": 3
+    },
+    {
+      "pais": "Cayman Islands",
+      "asociaciones": 2
+    },
+    {
+      "pais": "Mauritius",
+      "asociaciones": 2
+    },
+    {
+      "pais": "Bermuda",
+      "asociaciones": 1
+    },
+    {
+      "pais": "East Germany",
+      "asociaciones": 1
+    },
+    {
+      "pais": "Liechtenstein",
+      "asociaciones": 1
+    },
+    {
+      "pais": "Samoa",
+      "asociaciones": 1
+    },
+    {
+      "pais": "Vatican City",
+      "asociaciones": 1
+    }
+  ],
+  "coincidencias_equivalencia": {
+    "United States of America": "United States",
+    "Czechia": "Czech Republic",
+    "Dominican Rep.": "Dominican Republic"
+  },
+  "observacion": "Los titulos asociados a un pais que no aparece en el mapa siguen contandose en el dashboard; una coproduccion puede contar en varios paises."
+}

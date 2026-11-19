@@ -1,0 +1,60 @@
+.tabla-titulos {
+  margin-top: 22px;
+  background: #202020;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 24px;
+  color: #fff;
+}
+.tabla-titulos__header, .tabla-titulos__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.tabla-titulos__header h2 { font-size: 19px; margin: 0 0 8px; }
+.tabla-titulos__header p { font-size: 13px; color: #b3b3b3; margin: 0; }
+.tabla-titulos__contador { font-size: 13px; color: #e0e0e0; }
+.tabla-titulos__controles {
+  margin: 20px 0;
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(180px, 1fr);
+  gap: 14px;
+}
+.tabla-titulos__controles label { display: flex; flex-direction: column; gap: 8px; color: #b3b3b3; font-size: 12px; }
+.tabla-titulos__controles input, .tabla-titulos__controles select {
+  width: 100%; min-width: 0; background: #303030; color: #fff;
+  border: 1px solid #484848; border-radius: 8px; padding: 11px 12px; font: inherit; font-size: 13px;
+}
+.tabla-titulos__controles input:focus, .tabla-titulos__controles select:focus,
+.tabla-titulos button:focus-visible { outline: 2px solid #e50914; outline-offset: 2px; }
+.tabla-titulos__scroll { overflow-x: auto; }
+.tabla-titulos table { width: 100%; border-collapse: collapse; min-width: 760px; font-size: 12px; }
+.tabla-titulos th {
+  text-align: left; color: #b3b3b3; font-weight: 600; background: #272727;
+  padding: 13px 12px; border-bottom: 1px solid #444;
+}
+.tabla-titulos td { padding: 14px 12px; border-bottom: 1px solid #343434; vertical-align: top; line-height: 1.5; }
+.tabla-titulos tbody tr:hover:not(.tabla-titulos__detalle-fila) { background: #282828; }
+.tabla-titulos__nombre { font-weight: 650; color: #fff; min-width: 170px; }
+.tabla-titulos__detalle {
+  background: transparent; color: #ff646b; border: 1px solid #704044;
+  border-radius: 7px; padding: 7px 10px; cursor: pointer; white-space: nowrap;
+}
+.tabla-titulos__detalle:hover { background: #412326; }
+.tabla-titulos__detalle-fila td { color: #ddd; background: #292929; padding: 16px; }
+.tabla-titulos__metadatos { display: flex; gap: 12px 24px; flex-wrap: wrap; margin-top: 12px; color: #bbb; }
+.tabla-titulos__vacio { text-align: center; padding: 28px; color: #b3b3b3; }
+.tabla-titulos__footer { font-size: 12px; color: #b3b3b3; margin-top: 18px; }
+.tabla-titulos__paginas { display: flex; align-items: center; gap: 12px; }
+.tabla-titulos__paginas button {
+  border: 1px solid #5e3437; background: #2d2526; color: #fff;
+  border-radius: 7px; padding: 8px 12px; cursor: pointer;
+}
+.tabla-titulos__paginas button:disabled { opacity: .4; cursor: not-allowed; }
+@media (max-width: 650px) {
+  .tabla-titulos { padding: 16px; }
+  .tabla-titulos__controles { grid-template-columns: 1fr; }
+  .tabla-titulos__footer { align-items: flex-start; flex-direction: column; }
+}

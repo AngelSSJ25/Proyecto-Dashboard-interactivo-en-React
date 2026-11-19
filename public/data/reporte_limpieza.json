@@ -1,0 +1,58 @@
+{
+  "fuente": "netflix_titles.csv (sin modificar)",
+  "registros_originales": 8807,
+  "registros_procesados": 8807,
+  "titulos_unicos": 8807,
+  "peliculas": 6131,
+  "series": 2676,
+  "datos_faltantes_sin_inventar": {
+    "pais": 831,
+    "director": 2634,
+    "fecha_incorporacion": 10,
+    "clasificacion": 7,
+    "duracion": 0
+  },
+  "incidencias": {
+    "idsVacios": [],
+    "idsDuplicados": [],
+    "titulosVacios": [],
+    "fechasInvalidas": [],
+    "aniosInvalidos": [],
+    "duracionesInvalidas": [],
+    "duracionesRecuperadas": [
+      "s5542",
+      "s5795",
+      "s5814"
+    ],
+    "etiquetasRepetidas": [
+      {
+        "id": "s1632",
+        "columna": "cast"
+      },
+      {
+        "id": "s3719",
+        "columna": "director"
+      },
+      {
+        "id": "s6014",
+        "columna": "cast"
+      }
+    ]
+  },
+  "limites_atipicos_por_formato": {
+    "peliculas": {
+      "q1": 87,
+      "q3": 114,
+      "limite_inferior": 46.5,
+      "limite_superior": 154.5,
+      "registros_marcados": 450
+    },
+    "series": {
+      "q1": 1,
+      "q3": 2,
+      "limite_inferior": -0.5,
+      "limite_superior": 3.5,
+      "registros_marcados": 259
+    }
+  }
+}
